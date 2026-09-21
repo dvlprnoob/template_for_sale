@@ -49,6 +49,22 @@ export default {
     { icon: 'mdi-chart-line', title: 'Market Advisory', description: 'Narasi layanan konsultasi harga, area, dan potensi investasi.' },
     { icon: 'mdi-file-sign', title: 'Closing Support', description: 'Section untuk legalitas, KPR, dan pendampingan transaksi.' },
   ],
+  facilities: [
+    { icon: 'mdi-pool', title: 'Sky Pool', description: 'Fasilitas premium untuk lifestyle penghuni.' },
+    { icon: 'mdi-tree-outline', title: 'Private Garden', description: 'Area hijau dan walking path untuk keluarga.' },
+    { icon: 'mdi-shield-home-outline', title: '24/7 Security', description: 'Cluster access, CCTV, dan concierge gate.' },
+    { icon: 'mdi-car', title: 'Smart Parking', description: 'Dedicated parking dan visitor management.' },
+  ],
+  units: [
+    { name: 'Type Aster', size: '96 m2', rooms: '3 BR', price: 'Mulai 1.8M' },
+    { name: 'Type Canna', size: '128 m2', rooms: '4 BR', price: 'Mulai 2.6M' },
+    { name: 'Type Magnolia', size: '180 m2', rooms: '5 BR', price: 'By Request' },
+  ],
+  location: {
+    title: 'Lokasi premium dengan akses kota yang tenang.',
+    description: 'Dekat sekolah internasional, transportasi publik, retail premium, rumah sakit, dan area bisnis utama.',
+    points: ['8 menit ke CBD', '12 menit ke sekolah internasional', '15 menit ke airport connector'],
+  },
   projects: [
     { title: 'Serene Residence', type: 'Cluster', description: 'Highlight cluster keluarga dengan akses sekolah dan transportasi.', image: heroImage },
     { title: 'Nordic Loft', type: 'Apartment', description: 'Area portfolio untuk unit compact premium di pusat kota.', image: galleryImage },

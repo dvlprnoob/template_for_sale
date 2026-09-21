@@ -49,6 +49,21 @@ export default {
     { icon: 'mdi-clipboard-check-outline', title: 'Work Process', description: 'Section tahapan survey, planning, execution, QC, dan handover.' },
     { icon: 'mdi-certificate-outline', title: 'Certification', description: 'Area sertifikasi, safety compliance, dan legal perusahaan.' },
   ],
+  workProcess: [
+    { step: '01', title: 'Survey', description: 'Site survey, traffic, utility, dan risk mapping.' },
+    { step: '02', title: 'Method', description: 'Metode kerja, schedule, crew, dan equipment.' },
+    { step: '03', title: 'Execution', description: 'Safety, QC, reporting, dan handover.' },
+  ],
+  certifications: [
+    { title: 'ISO 9001', description: 'Quality workflow untuk tender dan delivery.' },
+    { title: 'K3 Infra', description: 'Safety compliance untuk pekerjaan lapangan.' },
+    { title: 'EPC Ready', description: 'Dokumentasi untuk procurement dan engineering.' },
+  ],
+  infraProjects: [
+    { title: 'North Access Road', type: 'Roadwork', description: 'Konstruksi jalan akses kawasan industri.', image: heroImage },
+    { title: 'Utility Corridor', type: 'Infrastructure', description: 'Pekerjaan utilitas dan drainase.', image: galleryImage },
+    { title: 'Bridge Reinforce', type: 'Structure', description: 'Proyek struktur dan perkuatan.', image: heroImage },
+  ],
   projects: [
     { title: 'North Access Road', type: 'Roadwork', description: 'Portfolio konstruksi jalan akses kawasan industri.', image: heroImage },
     { title: 'Utility Corridor', type: 'Infrastructure', description: 'Showcase pekerjaan utilitas dan drainase.', image: galleryImage },

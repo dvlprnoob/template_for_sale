@@ -1,3 +1,101 @@
-.clinic-template-03 {
-  color: #4a90a4;
+.clinic-healthcare-template-03 {
+  --template-primary: #4a90a4;
+  --template-secondary: #78b9a8;
+  --template-accent: #bdebdc;
+  background: #fbfffe;
+  color: #173033;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.dental-hero,
+.dental-schedule,
+.dental-treatment,
+.dental-cta {
+  padding: 78px 0;
+}
+
+.dental-hero {
+  background:
+    radial-gradient(circle at 82% 18%, rgba(189, 235, 220, 0.7), transparent 30%),
+    #ffffff;
+}
+
+.dental-hero__grid,
+.dental-cta__box {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 44px;
+  align-items: center;
+}
+
+.dental-hero img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 48px;
+}
+
+.dental-hero h1,
+.dental-cta h2 {
+  margin: 16px 0;
+  font-size: clamp(2.6rem, 6vw, 5.4rem);
+  line-height: 1;
+}
+
+.dental-hero p,
+.doctor-bubble p,
+.treatment-grid p,
+.dental-cta p {
+  color: #667085;
+  line-height: 1.75;
+}
+
+.dental-schedule,
+.dental-cta {
+  background: #eaf8f4;
+}
+
+.dental-schedule__grid,
+.treatment-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.doctor-bubble,
+.schedule-board,
+.treatment-grid article {
+  padding: 26px;
+  border-radius: 34px;
+  background: #ffffff;
+  box-shadow: 0 18px 50px rgba(74, 144, 164, 0.1);
+}
+
+.schedule-board {
+  display: grid;
+  gap: 14px;
+}
+
+.schedule-board div {
+  padding: 16px;
+  border-radius: 22px;
+  background: #fbfffe;
+}
+
+.dental-cta {
+  background: #173033;
+  color: #ffffff;
+}
+
+.dental-cta p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+@media (max-width: 900px) {
+  .dental-hero__grid,
+  .dental-schedule__grid,
+  .treatment-grid,
+  .dental-cta__box {
+    grid-template-columns: 1fr;
+  }
 }

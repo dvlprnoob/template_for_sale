@@ -49,6 +49,19 @@ export default {
     { icon: 'mdi-map-marker-radius-outline', title: 'Outlet Finder', description: 'Panel cabang, jam buka, dan CTA WhatsApp per area sebagai custom request.' },
     { icon: 'mdi-party-popper', title: 'Party Pack', description: 'Section paket acara, office lunch, birthday meal, dan catering burger.' },
   ],
+  menus: [
+    { name: 'Double Bara Stack', category: 'Signature', price: '89K', description: 'Beef patty, smoked cheese, house sauce, pickled onion.', image: heroImage },
+    { name: 'Smoky Cheese Drop', category: 'Seasonal', price: '76K', description: 'Charred bun, cheddar melt, jalapeno relish, fries.', image: galleryImage },
+    { name: 'Late Night Combo', category: 'Bundle', price: '118K', description: 'Burger, fries, signature drink, dan sauce flight.', image: heroImage },
+  ],
+  chefRecommendations: [
+    { title: 'House Sauce Flight', description: 'Tiga sauce signature untuk upsell menu.', tag: 'Chef Pick' },
+    { title: 'Loaded Fries', description: 'Menu side yang cocok untuk combo dan promo.', tag: 'Best Seller' },
+  ],
+  reservation: {
+    title: 'Reserve a table or launch the next burger drop.',
+    description: 'CTA untuk dine-in, party pack, campaign menu, atau delivery inquiry.',
+  },
   projects: [
     { title: 'Double Bara Stack', type: 'Signature', description: 'Hero product dengan visual besar dan copy pendek untuk menu utama.', image: heroImage },
     { title: 'Smoky Cheese Drop', type: 'Seasonal', description: 'Layout promo untuk burger of the month, voucher, atau combo.', image: galleryImage },

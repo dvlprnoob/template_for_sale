@@ -49,6 +49,20 @@ export default {
     { icon: 'mdi-silverware-fork-knife', title: 'Tasting Course', description: 'Daftar course elegan untuk degustation, pairing, atau chef table.' },
     { icon: 'mdi-glass-wine', title: 'Private Pairing', description: 'CTA untuk private dinner, wine pairing, dan intimate event.' },
   ],
+  tastingCourses: [
+    { title: 'Forest Broth', course: 'Course I', description: 'Pembuka, origin story, dan pairing note.', image: galleryImage },
+    { title: 'Charred Root', course: 'Course VI', description: 'Course utama dengan detail bahan musiman.', image: heroImage },
+    { title: 'Cloud Dessert', course: 'Course XII', description: 'Penutup tasting menu dengan mood premium.', image: galleryImage },
+  ],
+  diningRituals: [
+    { icon: 'mdi-sprout-outline', title: 'Seasonal Produce', description: 'Farm partner, soil, dan filosofi bahan lokal.' },
+    { icon: 'mdi-silverware-fork-knife', title: 'Tasting Course', description: 'Degustation flow, pacing, dan service detail.' },
+    { icon: 'mdi-glass-wine', title: 'Private Pairing', description: 'Private dinner, wine pairing, dan intimate event.' },
+  ],
+  reservation: {
+    title: 'Reserve a quiet table for a seasonal tasting experience.',
+    description: 'CTA untuk tasting menu, chef table, pairing, atau private dinner.',
+  },
   projects: [
     { title: 'Forest Broth', type: 'Course I', description: 'Course list editorial untuk pembuka, origin story, dan pairing note.', image: galleryImage },
     { title: 'Charred Root', type: 'Course VI', description: 'Showcase course utama dengan visual tenang dan detail bahan.', image: heroImage },

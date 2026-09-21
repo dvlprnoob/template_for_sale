@@ -1,3 +1,107 @@
 .automotive-template-03 {
-  color: #a51f2d;
+  --template-primary: #1f4f9a;
+  --template-secondary: #dd1e2e;
+  --template-accent: #e8f1ff;
+  background: #f4f8ff;
+  color: #15233a;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.garage-hero,
+.sparepart-board,
+.garage-service-lane,
+.workshop-cta {
+  padding: 82px 0;
+}
+
+.garage-hero {
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(circle at 78% 20%, rgba(221, 30, 46, 0.14), transparent 30%),
+    linear-gradient(135deg, #ffffff, #e8f1ff);
+}
+
+.garage-hero__grid,
+.workshop-box {
+  display: grid;
+  grid-template-columns: 0.86fr 1.14fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.garage-hero h1,
+.garage-heading h2,
+.workshop-box h2 {
+  color: #1f4f9a;
+  font-size: clamp(3rem, 7vw, 6.4rem);
+  line-height: 0.96;
+}
+
+.garage-car {
+  border-radius: 36px;
+  overflow: hidden;
+  box-shadow: 0 28px 80px rgba(31, 79, 154, 0.18);
+}
+
+.garage-car img,
+.promo-board-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.garage-car img {
+  height: 500px;
+}
+
+.sparepart-board {
+  background: #ffffff;
+}
+
+.promo-board-grid,
+.lane-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.promo-board-grid article,
+.lane-grid article,
+.lane-stats {
+  padding: 26px;
+  border-radius: 24px;
+  background: #f4f8ff;
+}
+
+.promo-board-grid img {
+  height: 240px;
+  border-radius: 20px;
+}
+
+.garage-service-lane,
+.workshop-cta {
+  background: #15233a;
+  color: #ffffff;
+}
+
+.lane-stats {
+  display: grid;
+  gap: 14px;
+  background: #dd1e2e;
+}
+
+.lane-stats strong {
+  display: block;
+  font-size: 2rem;
+}
+
+@media (max-width: 900px) {
+  .garage-hero__grid,
+  .promo-board-grid,
+  .lane-grid,
+  .workshop-box {
+    grid-template-columns: 1fr;
+  }
 }

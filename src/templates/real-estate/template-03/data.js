@@ -49,6 +49,20 @@ export default {
     { icon: 'mdi-map-marker-star', title: 'Lokasi Strategis', description: 'Highlight akses pantai, bisnis, sekolah, dan area wisata.' },
     { icon: 'mdi-home-heart', title: 'Unit Consultation', description: 'Alur konsultasi unit, tipe bangunan, dan schedule survey.' },
   ],
+  amenities: [
+    { icon: 'mdi-pool', title: 'Lagoon Pool', description: 'Pool dan deck area untuk pengalaman resort living.' },
+    { icon: 'mdi-flower-outline', title: 'Garden Pavilion', description: 'Area hijau privat dan ruang komunal.' },
+    { icon: 'mdi-map-marker-star', title: 'Beach Access', description: 'Akses lifestyle, wisata, dan area bisnis Bali.' },
+  ],
+  residences: [
+    { title: 'Lagoon Villa', type: 'Villa', description: 'Unit utama dengan view dan outdoor lounge.', image: heroImage },
+    { title: 'Garden Pavilion', type: 'Facility', description: 'Fasilitas komunal dan green corridor.', image: galleryImage },
+    { title: 'Sunset Residence', type: 'Residence', description: 'Hunian keluarga premium di kawasan privat.', image: heroImage },
+  ],
+  privateViewing: {
+    title: 'Arrange a quiet walkthrough for the selected residence.',
+    description: 'CTA untuk brochure, price list, virtual tour, dan jadwal survey.',
+  },
   projects: [
     { title: 'Lagoon Villa', type: 'Villa', description: 'Showcase unit utama dengan view dan area outdoor.', image: heroImage },
     { title: 'Garden Pavilion', type: 'Facility', description: 'Highlight fasilitas komunal dan green area.', image: galleryImage },

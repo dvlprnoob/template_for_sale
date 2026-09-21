@@ -49,6 +49,21 @@ export default {
     { icon: 'mdi-toothbrush-paste', title: 'Dental Treatment', description: 'Konten scaling, whitening, behel, dan konsultasi gigi.' },
     { icon: 'mdi-medical-bag', title: 'Patient Care', description: 'Alur layanan pasien baru, follow-up, dan edukasi kesehatan.' },
   ],
+  doctors: [
+    { initials: 'DI', name: 'drg. Indah Permata', specialty: 'Dental Director', schedule: 'Mon - Fri' },
+    { initials: 'DN', name: 'dr. Nanda Putra', specialty: 'Family Care', schedule: 'Tue - Sat' },
+    { initials: 'SW', name: 'Siska Wulandari', specialty: 'Patient Care', schedule: 'Daily' },
+  ],
+  schedules: [
+    { day: 'Monday', time: '09.00 - 18.00', doctor: 'Dental Treatment' },
+    { day: 'Wednesday', time: '10.00 - 20.00', doctor: 'Family Clinic' },
+    { day: 'Saturday', time: '09.00 - 15.00', doctor: 'Kids Clinic Day' },
+  ],
+  dentalTreatments: [
+    { icon: 'mdi-toothbrush-paste', title: 'Scaling', description: 'Treatment rutin dan preventive visit.' },
+    { icon: 'mdi-tooth-outline', title: 'Whitening', description: 'Cosmetic dental treatment dan consultation.' },
+    { icon: 'mdi-calendar-clock', title: 'Appointment Desk', description: 'Alur appointment dan follow-up pasien.' },
+  ],
   projects: [
     { title: 'Smile Program', type: 'Dental', description: 'Highlight paket perawatan gigi keluarga.', image: heroImage },
     { title: 'Kids Clinic Day', type: 'Program', description: 'Showcase layanan anak dan ambience klinik.', image: galleryImage },

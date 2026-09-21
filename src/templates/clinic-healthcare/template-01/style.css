@@ -1,3 +1,144 @@
-.clinic-template-01 {
-  color: #0f766e;
+.clinic-healthcare-template-01 {
+  --template-primary: #14716a;
+  --template-secondary: #385f8f;
+  --template-accent: #8dd8c8;
+  --template-surface: #ffffff;
+  --template-ink: #173033;
+  background: #f4fbfb;
+  color: #173033;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.clinic-hero {
+  padding: 96px 0;
+  background:
+    radial-gradient(circle at 84% 18%, rgba(141, 216, 200, 0.45), transparent 28%),
+    #ffffff;
+}
+
+.clinic-hero__grid,
+.doctor-grid,
+.appointment-box {
+  display: grid;
+  grid-template-columns: 0.94fr 1.06fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.clinic-hero h1,
+.clinic-services h2,
+.doctor-grid h2,
+.schedule-panel h2,
+.appointment-box h2 {
+  margin: 16px 0;
+  font-size: clamp(2.6rem, 6vw, 5.6rem);
+  line-height: 1;
+}
+
+.clinic-hero p,
+.clinic-service-card p,
+.doctor-card p,
+.appointment-box p {
+  color: #667085;
+  line-height: 1.8;
+}
+
+.clinic-hero__card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 34px;
+  box-shadow: 0 24px 80px rgba(20, 113, 106, 0.14);
+}
+
+.clinic-hero__card img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+}
+
+.clinic-hero__card div {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  display: grid;
+  padding: 20px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.clinic-services,
+.clinic-doctors,
+.clinic-schedule,
+.clinic-appointment {
+  padding: 76px 0;
+}
+
+.clinic-service-card,
+.doctor-card {
+  height: 100%;
+  padding: 26px;
+  border-radius: 28px;
+  box-shadow: 0 16px 48px rgba(20, 113, 106, 0.08);
+}
+
+.clinic-doctors {
+  background: #ffffff;
+}
+
+.doctor-grid {
+  grid-template-columns: 1.1fr repeat(3, 1fr);
+}
+
+.clinic-doctors span,
+.clinic-schedule span,
+.clinic-appointment span {
+  color: #14716a;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.clinic-schedule {
+  background: #e9f8f5;
+}
+
+.schedule-panel {
+  display: grid;
+  grid-template-columns: 0.78fr 1.22fr;
+  gap: 28px;
+  padding: 34px;
+  border-radius: 32px;
+}
+
+.schedule-list {
+  display: grid;
+  gap: 12px;
+}
+
+.schedule-list article {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 18px;
+  padding: 16px;
+  border-radius: 20px;
+  background: #f4fbfb;
+}
+
+.clinic-appointment {
+  background: #173033;
+  color: #ffffff;
+}
+
+.clinic-appointment p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+@media (max-width: 900px) {
+  .clinic-hero__grid,
+  .doctor-grid,
+  .schedule-panel,
+  .appointment-box,
+  .schedule-list article {
+    grid-template-columns: 1fr;
+  }
 }

@@ -49,6 +49,22 @@ export default {
     { icon: 'mdi-map-search-outline', title: 'Area Research', description: 'Section insight lokasi, akses, fasilitas, dan tren harga.' },
     { icon: 'mdi-account-tie-outline', title: 'Buyer Handling', description: 'Alur komunikasi calon pembeli sampai jadwal survey.' },
   ],
+  listingHighlights: [
+    { title: 'Metro Suites', category: 'High-rise', value: 'Yield-ready', description: 'Hunian vertikal untuk buyer urban dan investor.', image: galleryImage },
+    { title: 'Aster Park', category: 'Townhouse', value: 'Private cluster', description: 'Rumah compact dengan fasilitas privat.', image: heroImage },
+    { title: 'The Corner Hub', category: 'Commercial', value: 'Retail front', description: 'Ruko strategis untuk brand dan F&B.', image: galleryImage },
+  ],
+  marketInsights: [
+    { value: '95%', label: 'Repeat client' },
+    { value: '320M', label: 'Nilai transaksi' },
+    { value: '36', label: 'Project partner' },
+    { value: '7 hari', label: 'Respon cepat' },
+  ],
+  buyerFlow: [
+    { step: '01', title: 'Area shortlisting', description: 'Kurasi area dan aset sesuai tujuan investasi.' },
+    { step: '02', title: 'Survey schedule', description: 'Jadwal kunjungan unit dan review legalitas.' },
+    { step: '03', title: 'Deal support', description: 'Pendampingan negosiasi, KPR, dan closing.' },
+  ],
   projects: [
     { title: 'Metro Suites', type: 'High-rise', description: 'Portfolio untuk hunian vertikal dan unit investasi.', image: galleryImage },
     { title: 'Aster Park', type: 'Townhouse', description: 'Highlight rumah compact dengan fasilitas privat.', image: heroImage },

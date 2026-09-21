@@ -49,6 +49,21 @@ export default {
     { icon: 'mdi-briefcase-outline', title: 'Corporate Fleet', description: 'Narasi layanan kontrak perusahaan dan driver management.' },
     { icon: 'mdi-map-marker-distance', title: 'Airport Transfer', description: 'Section layanan transfer dan itinerary custom.' },
   ],
+  fleetPrograms: [
+    { icon: 'mdi-car-clock', title: 'Daily Rental', description: 'Sewa harian, mingguan, dan bulanan untuk personal atau bisnis.' },
+    { icon: 'mdi-briefcase-outline', title: 'Corporate Fleet', description: 'Kontrak perusahaan, driver management, dan SLA operasional.' },
+    { icon: 'mdi-map-marker-distance', title: 'Airport Transfer', description: 'Transfer bandara, itinerary, dan mobility concierge.' },
+  ],
+  vehicles: [
+    { name: 'Executive Transfer', category: 'Premium', spec: 'Driver included', image: galleryImage },
+    { name: 'Tour Mobility', category: 'Travel', spec: 'SUV/MPV ready', image: heroImage },
+    { name: 'Corporate Shuttle', category: 'Fleet', spec: 'Monthly plan', image: galleryImage },
+  ],
+  operationStats: [
+    { value: '120+', label: 'Fleet aktif' },
+    { value: '9 kota', label: 'Coverage' },
+    { value: '24/7', label: 'Support' },
+  ],
   projects: [
     { title: 'Corporate Shuttle', type: 'Fleet', description: 'Showcase armada untuk kantor dan event.', image: galleryImage },
     { title: 'Tour Mobility', type: 'Travel', description: 'Highlight rental untuk itinerary wisata.', image: heroImage },

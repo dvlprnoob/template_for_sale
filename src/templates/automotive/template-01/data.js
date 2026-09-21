@@ -49,6 +49,24 @@ export default {
     { icon: 'mdi-spray-bottle', title: 'Detailing Care', description: 'Profil layanan coating, interior care, dan inspeksi visual.' },
     { icon: 'mdi-credit-card-check-outline', title: 'Financing', description: 'Area untuk simulasi pembiayaan sebagai custom request.' },
   ],
+  vehicles: [
+    { name: 'Veloce GT', category: 'Sport Sedan', power: '285 HP', price: 'Start 780M', image: heroImage },
+    { name: 'Terra X-Line', category: 'Urban SUV', power: '240 HP', price: 'Start 690M', image: galleryImage },
+    { name: 'Nova Fleet', category: 'Executive MPV', power: 'Hybrid', price: 'Corporate', image: heroImage },
+  ],
+  garageServices: [
+    { icon: 'mdi-engine-outline', title: 'Performance Check', description: 'Inspeksi mesin, rem, suspensi, dan road test.' },
+    { icon: 'mdi-car-wash', title: 'Detailing Bay', description: 'Coating, interior care, dan paint correction.' },
+    { icon: 'mdi-tools', title: 'After Sales Care', description: 'Service reminder dan sparepart support.' },
+  ],
+  promos: [
+    { title: 'Trade-in Boost', description: 'Campaign tukar tambah dengan appraisal cepat.', tag: 'Limited' },
+    { title: 'Weekend Test Drive', description: 'Slot test drive Sabtu-Minggu untuk calon buyer.', tag: 'Drive' },
+  ],
+  testDrive: {
+    title: 'Pilih unit, booking slot, lalu rasakan performanya.',
+    description: 'CTA utama untuk booking test drive, request quote, dan konsultasi financing.',
+  },
   projects: [
     { title: 'Executive Sedan Line', type: 'Showroom', description: 'Highlight kendaraan eksekutif untuk fleet dan personal.', image: heroImage },
     { title: 'Weekend SUV Series', type: 'Collection', description: 'Showcase SUV keluarga dan kendaraan adventure.', image: galleryImage },

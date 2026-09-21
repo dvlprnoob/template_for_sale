@@ -1,3 +1,138 @@
-.restaurant-template-03 {
-  color: #7b3f2a;
+.restaurant-cafe-template-03 {
+  --template-primary: #2a1710;
+  --template-secondary: #b86b4b;
+  --template-accent: #e6c18a;
+  background: #fff7ed;
+  color: #2a1710;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.magazine-hero {
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(42, 23, 16, 0.08) 0 1px, transparent 1px 90px),
+    #fff7ed;
+}
+
+.magazine-grid,
+.gustave-box {
+  display: grid;
+  grid-template-columns: 0.88fr 1.12fr;
+  gap: 52px;
+  align-items: center;
+}
+
+.magazine-copy span,
+.feed-heading span,
+.cafe-columns span,
+.gustave-box span {
+  color: #b86b4b;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.magazine-copy h1,
+.feed-heading h2,
+.gustave-box h2 {
+  margin: 18px 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 7vw, 7.5rem);
+  font-weight: 400;
+  line-height: 0.92;
+}
+
+.magazine-cover {
+  position: relative;
+  height: min(68vh, 560px);
+  padding: 18px;
+  border: 1px solid #2a1710;
+  background: #ffffff;
+  box-shadow: 12px 12px 0 rgba(107, 59, 42, 0.18);
+  transform: rotate(1deg);
+}
+
+.magazine-cover img,
+.article-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cover-label {
+  position: absolute;
+  left: 32px;
+  right: 32px;
+  bottom: 32px;
+  padding: 12px;
+  background: #fff7ed;
+  border: 1px solid #2a1710;
+}
+
+.article-feed,
+.cafe-columns,
+.gustave-cta {
+  padding: 86px 0;
+}
+
+.article-feed {
+  background: #ffffff;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+}
+
+.article-card {
+  border: 1px solid #2a1710;
+  background: #fff7ed;
+}
+
+.article-card--1 {
+  grid-row: span 2;
+}
+
+.article-card img {
+  height: 280px;
+  border-bottom: 1px solid #2a1710;
+}
+
+.article-card--1 img {
+  height: 560px;
+}
+
+.article-card div,
+.columns-grid article {
+  padding: 24px;
+}
+
+.cafe-columns {
+  background: #f3dcc8;
+}
+
+.columns-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.columns-grid article {
+  min-height: 260px;
+  border: 1px solid #2a1710;
+  background: #fff7ed;
+  box-shadow: 6px 6px 0 rgba(107, 59, 42, 0.18);
+}
+
+@media (max-width: 860px) {
+  .magazine-grid,
+  .gustave-box,
+  .article-grid,
+  .columns-grid {
+    grid-template-columns: 1fr;
+  }
 }

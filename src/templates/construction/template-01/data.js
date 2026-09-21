@@ -49,6 +49,21 @@ export default {
     { icon: 'mdi-ruler-square-compass', title: 'Design & Build', description: 'Konten layanan arsitektur, struktur, dan interior dalam satu paket.' },
     { icon: 'mdi-shield-check-outline', title: 'Site Management', description: 'Area untuk jadwal, quality control, dan standar keselamatan.' },
   ],
+  workProcess: [
+    { step: '01', title: 'Site Audit', description: 'Survey lokasi, scope awal, dan risk mapping.' },
+    { step: '02', title: 'Design & Budget', description: 'RAB, timeline, material strategy, dan metode kerja.' },
+    { step: '03', title: 'Build Control', description: 'Eksekusi lapangan, safety, QC, dan progress report.' },
+    { step: '04', title: 'Handover', description: 'Final inspection, dokumen, dan maintenance guide.' },
+  ],
+  certifications: [
+    { title: 'ISO 9001', description: 'Quality management workflow.' },
+    { title: 'K3 Construction', description: 'Safety procedure and site compliance.' },
+    { title: 'Green Build', description: 'Material efficiency and waste control.' },
+  ],
+  consultation: {
+    title: 'Mulai dari scope, timeline, dan estimasi yang jelas.',
+    description: 'CTA untuk tender, survey lokasi, atau konsultasi design-build.',
+  },
   projects: [
     { title: 'Cendana Office Park', type: 'Commercial', description: 'Portfolio gedung perkantoran medium-rise.', image: heroImage },
     { title: 'Harbor Warehouse', type: 'Industrial', description: 'Showcase konstruksi gudang dan fasilitas logistik.', image: galleryImage },

@@ -1,3 +1,127 @@
 .real-estate-template-02 {
-  color: #0f172a;
+  --template-primary: #172033;
+  --template-secondary: #7a8f99;
+  --template-accent: #b88746;
+  background: #ffffff;
+  color: #111827;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.urban-hero,
+.urban-listings,
+.urban-insights,
+.urban-flow {
+  padding: 86px 0;
+}
+
+.urban-hero {
+  background: linear-gradient(90deg, #ffffff 0 48%, #172033 48% 100%);
+}
+
+.urban-hero__grid,
+.flow-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 44px;
+  align-items: center;
+}
+
+.urban-hero img,
+.urban-listing-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.urban-hero img {
+  height: 540px;
+}
+
+.urban-hero span,
+.urban-heading span,
+.urban-flow article span {
+  color: #b88746;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.urban-hero h1,
+.urban-heading h2,
+.urban-flow h2 {
+  margin: 14px 0;
+  font-size: clamp(2.8rem, 6vw, 5.8rem);
+  line-height: 0.96;
+}
+
+.urban-hero p,
+.urban-listing-grid p,
+.urban-flow p {
+  color: #667085;
+  line-height: 1.75;
+}
+
+.urban-listing-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 20px;
+}
+
+.urban-listing-grid article {
+  display: grid;
+  grid-template-rows: 280px auto;
+  border: 1px solid #d8dde3;
+}
+
+.urban-listing-grid article:first-child {
+  grid-row: span 2;
+  grid-template-rows: 560px auto;
+}
+
+.urban-listing-grid article div,
+.urban-flow article,
+.urban-flow__cta {
+  padding: 26px;
+}
+
+.urban-insights,
+.urban-flow {
+  background: #172033;
+  color: #ffffff;
+}
+
+.insight-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.insight-grid div,
+.urban-flow article,
+.urban-flow__cta {
+  background: #172033;
+}
+
+.insight-grid div {
+  display: grid;
+  padding: 28px;
+}
+
+.insight-grid strong {
+  color: #b88746;
+  font-size: 2.6rem;
+}
+
+@media (max-width: 900px) {
+  .urban-hero {
+    background: #ffffff;
+  }
+
+  .urban-hero__grid,
+  .urban-listing-grid,
+  .flow-grid,
+  .insight-grid {
+    grid-template-columns: 1fr;
+  }
 }

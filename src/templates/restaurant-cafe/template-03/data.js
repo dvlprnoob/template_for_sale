@@ -49,6 +49,20 @@ export default {
     { icon: 'mdi-coffee-outline', title: 'Cafe Ritual', description: 'Section brunch, coffee, pastry, dan ambience seperti food magazine.' },
     { icon: 'mdi-table-chair', title: 'Small Reservation', description: 'CTA reservasi kecil, private brunch, tasting, atau cafe event.' },
   ],
+  articles: [
+    { title: 'Le Brunch Notes', type: 'Article', description: 'Menu brunch, pastry pairing, dan cafe story.', image: heroImage },
+    { title: 'Pain & Beurre', type: 'Bakery', description: 'Bakery counter, product drop, dan menu musiman.', image: galleryImage },
+    { title: 'Terrace Hour', type: 'Culture', description: 'Ambience, community table, dan event kecil cafe.', image: heroImage },
+  ],
+  cafeGuides: [
+    { icon: 'mdi-newspaper-variant-outline', title: 'Alimentation Journal', description: 'Artikel untuk menu story dan seasonal ingredient.' },
+    { icon: 'mdi-coffee-outline', title: 'Cafe Ritual', description: 'Brunch, coffee, pastry, dan ambience seperti food magazine.' },
+    { icon: 'mdi-table-chair', title: 'Small Reservation', description: 'Private brunch, tasting, atau cafe event.' },
+  ],
+  editorialReservation: {
+    title: 'Reserve a table, publish a menu story, or launch a cafe event.',
+    description: 'CTA untuk brunch, bakery drop, cafe event, atau content-style menu campaign.',
+  },
   projects: [
     { title: 'Le Brunch Notes', type: 'Article', description: 'Artikel unggulan untuk menu brunch, pastry pairing, dan cafe story.', image: heroImage },
     { title: 'Pain & Beurre', type: 'Bakery', description: 'Showcase bakery counter, product drop, dan menu musiman.', image: galleryImage },

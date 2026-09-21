@@ -1,3 +1,214 @@
-.restaurant-template-01 {
+.restaurant-cafe-template-01 {
+  --template-primary: #2b170f;
+  --template-secondary: #9a3412;
+  --template-accent: #ffefc7;
+  --template-surface: #fff7ed;
+  --template-ink: #2b170f;
+  overflow: hidden;
+  background: #ffefc7;
+  color: #2b170f;
+  font-family: "Arial Black", Impact, sans-serif;
+}
+
+.food-hero {
+  position: relative;
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(circle at 78% 25%, rgba(154, 52, 18, 0.18), transparent 32%),
+    #ffefc7;
+}
+
+.food-marquee {
+  position: absolute;
+  left: -5%;
+  right: -5%;
+  top: 24px;
+  white-space: nowrap;
+  color: rgba(43, 23, 15, 0.12);
+  font-size: clamp(3rem, 8vw, 7rem);
+  animation: foodMarquee 16s linear infinite;
+}
+
+.food-hero__grid,
+.reserve-box {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.food-hero span,
+.food-heading span,
+.ambience-grid span,
+.food-reserve span {
   color: #9a3412;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.food-hero h1,
+.food-heading h2,
+.ambience-grid h2,
+.food-reserve h2 {
+  margin: 18px 0;
+  font-size: clamp(3.2rem, 8vw, 8rem);
+  line-height: 0.86;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 0 #d4a64f;
+}
+
+.food-hero p,
+.food-menu-card p,
+.chef-grid p,
+.food-reserve p {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.75;
+}
+
+.food-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.food-plate {
+  position: relative;
+  height: min(62vh, 540px);
+  border: 4px solid #2b170f;
+  border-radius: 42px;
+  background: #fff7ed;
+  box-shadow: 16px 16px 0 #9a3412;
+  transform: rotate(2deg);
+}
+
+.food-plate img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 38px;
+}
+
+.food-badge {
+  position: absolute;
+  right: -18px;
+  bottom: 28px;
+  display: grid;
+  width: 136px;
+  height: 136px;
+  place-items: center;
+  border-radius: 999px;
+  background: #2b170f;
+  color: #ffefc7;
+  animation: badgeWobble 2.6s ease-in-out infinite alternate;
+}
+
+.food-menu,
+.food-ambience,
+.food-chef,
+.food-reserve {
+  padding: 86px 0;
+}
+
+.food-menu,
+.food-reserve {
+  background: #fff7ed;
+}
+
+.food-menu-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+}
+
+.food-menu-card {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 22px;
+  align-items: center;
+  padding: 18px;
+  border: 4px solid #2b170f;
+  background: #ffefc7;
+  box-shadow: 10px 10px 0 #9a3412;
+}
+
+.food-menu-card--1 {
+  grid-row: span 2;
+  grid-template-columns: 1fr;
+}
+
+.food-menu-card img,
+.ambience-grid img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.food-menu-card--1 img {
+  height: 420px;
+}
+
+.food-ambience {
+  background: #2b170f;
+  color: #ffefc7;
+}
+
+.ambience-grid {
+  display: grid;
+  grid-template-columns: 1.2fr repeat(3, 1fr);
+  gap: 18px;
+  align-items: end;
+}
+
+.chef-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.chef-grid article {
+  padding: 32px;
+  border: 4px solid #2b170f;
+  border-radius: 34px;
+  background: #fff7ed;
+  box-shadow: 10px 10px 0 #9a3412;
+}
+
+.reserve-box {
+  grid-template-columns: 1fr auto;
+}
+
+@keyframes foodMarquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-28%);
+  }
+}
+
+@keyframes badgeWobble {
+  from {
+    transform: rotate(-4deg);
+  }
+
+  to {
+    transform: rotate(7deg);
+  }
+}
+
+@media (max-width: 900px) {
+  .food-hero__grid,
+  .food-menu-grid,
+  .food-menu-card,
+  .ambience-grid,
+  .chef-grid,
+  .reserve-box {
+    grid-template-columns: 1fr;
+  }
 }

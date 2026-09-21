@@ -1,3 +1,147 @@
 .real-estate-template-03 {
-  color: #243b53;
+  --template-primary: #182422;
+  --template-secondary: #8d7b58;
+  --template-accent: #d6b56d;
+  background: #fffaf0;
+  color: #1f2933;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.resort-hero {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.resort-hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: luxuryZoom 14s ease-in-out infinite alternate;
+}
+
+.resort-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.72));
+}
+
+.resort-nav,
+.resort-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.resort-nav {
+  position: absolute;
+  top: 28px;
+  left: max(24px, calc((100vw - 1180px) / 2));
+  right: max(24px, calc((100vw - 1180px) / 2));
+  display: flex;
+  justify-content: space-between;
+}
+
+.resort-copy {
+  width: min(860px, calc(100% - 32px));
+  text-align: center;
+}
+
+.resort-copy h1,
+.resort-story h2,
+.amenity-grid h2,
+.residence-heading h2,
+.resort-cta h2 {
+  margin: 16px 0;
+  font-size: clamp(3rem, 7vw, 7rem);
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.resort-story,
+.resort-amenities,
+.resort-residences,
+.resort-cta {
+  padding: 86px 0;
+}
+
+.story-grid,
+.amenity-grid,
+.resort-cta__inner {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.resort-story p,
+.amenity-grid p,
+.residence-grid p,
+.resort-cta p {
+  color: #667085;
+  line-height: 1.8;
+}
+
+.resort-amenities,
+.resort-cta {
+  background: #182422;
+  color: #fffaf0;
+}
+
+.amenity-visual img,
+.residence-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.amenity-visual {
+  height: 520px;
+  border-radius: 220px 220px 16px 16px;
+  overflow: hidden;
+}
+
+.amenity-grid article {
+  display: flex;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.residence-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.residence-grid article {
+  background: #ffffff;
+  border-radius: 180px 180px 12px 12px;
+  overflow: hidden;
+}
+
+.residence-grid img {
+  height: 330px;
+}
+
+.residence-grid div {
+  padding: 24px;
+}
+
+@keyframes luxuryZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+@media (max-width: 900px) {
+  .story-grid,
+  .amenity-grid,
+  .residence-grid,
+  .resort-cta__inner {
+    grid-template-columns: 1fr;
+  }
 }

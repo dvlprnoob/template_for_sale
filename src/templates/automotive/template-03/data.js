@@ -49,6 +49,21 @@ export default {
     { icon: 'mdi-car-cog', title: 'Workshop Service', description: 'Paket servis berkala, inspeksi, dan perbaikan cepat.' },
     { icon: 'mdi-sale-outline', title: 'Sparepart Promo', description: 'Area promo ban, oli, part performance, dan accessories.' },
   ],
+  garageServices: [
+    { icon: 'mdi-engine-outline', title: 'Performance Tune', description: 'Upgrade mesin, rem, suspensi, dan diagnostic.' },
+    { icon: 'mdi-car-cog', title: 'Workshop Service', description: 'Servis berkala, inspeksi, dan perbaikan cepat.' },
+    { icon: 'mdi-spray-bottle', title: 'Detailing Bay', description: 'Coating, interior care, dan paint correction.' },
+  ],
+  promos: [
+    { title: 'Street Performance Kit', tag: 'Upgrade', description: 'Paket upgrade harian dengan visual agresif.', image: heroImage },
+    { title: 'Detailing Promo', tag: 'Promo', description: 'Campaign coating dan interior care.', image: galleryImage },
+    { title: 'Track Prep', tag: 'Service', description: 'Persiapan kendaraan untuk event otomotif.', image: heroImage },
+  ],
+  sparepartHighlights: [
+    { value: '35', label: 'Brand part' },
+    { value: '6 bay', label: 'Workshop' },
+    { value: '48 jam', label: 'Fast service' },
+  ],
   projects: [
     { title: 'Street Performance Kit', type: 'Upgrade', description: 'Showcase paket upgrade harian dengan visual agresif.', image: heroImage },
     { title: 'Detailing Promo', type: 'Promo', description: 'Highlight campaign coating dan interior care.', image: galleryImage },

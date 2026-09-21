@@ -49,6 +49,26 @@ export default {
     { icon: 'mdi-tooth-outline', title: 'Dental Care', description: 'Section untuk tindakan gigi, perawatan, dan edukasi pasien.' },
     { icon: 'mdi-heart-pulse', title: 'Wellness Program', description: 'Area layanan preventif dan paket kesehatan keluarga.' },
   ],
+  medicalServices: [
+    { icon: 'mdi-stethoscope', title: 'General Practice', description: 'Konsultasi dokter umum, checkup, dan skrining berkala.' },
+    { icon: 'mdi-tooth-outline', title: 'Dental Care', description: 'Perawatan gigi, scaling, dan edukasi pasien.' },
+    { icon: 'mdi-heart-pulse', title: 'Preventive Care', description: 'Program kesehatan keluarga dan wellness.' },
+    { icon: 'mdi-test-tube', title: 'Basic Lab', description: 'Pemeriksaan lab dasar sebagai custom request.' },
+  ],
+  doctors: [
+    { initials: 'DR', name: 'dr. Rania Putri', specialty: 'General Practitioner', schedule: 'Mon - Thu' },
+    { initials: 'DA', name: 'drg. Aditya Noor', specialty: 'Dental Lead', schedule: 'Tue - Sat' },
+    { initials: 'NS', name: 'Nadia Sari', specialty: 'Nurse Coordinator', schedule: 'Daily' },
+  ],
+  schedules: [
+    { day: 'Monday - Friday', time: '08.00 - 20.00', service: 'General Clinic' },
+    { day: 'Tuesday - Saturday', time: '10.00 - 18.00', service: 'Dental Care' },
+    { day: 'Weekend', time: '09.00 - 15.00', service: 'Appointment Only' },
+  ],
+  appointment: {
+    title: 'Buat appointment tanpa membuat pasien bingung.',
+    description: 'CTA untuk konsultasi, jadwal dokter, dan request layanan tambahan.',
+  },
   projects: [
     { title: 'Family Checkup', type: 'Program', description: 'Showcase paket kesehatan keluarga.', image: heroImage },
     { title: 'Dental Studio', type: 'Facility', description: 'Highlight fasilitas dental modern.', image: galleryImage },

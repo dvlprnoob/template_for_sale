@@ -49,6 +49,21 @@ export default {
     { icon: 'mdi-sofa-outline', title: 'Interior Build', description: 'Section interior, material board, dan execution partner.' },
     { icon: 'mdi-cube-scan', title: '3D Visualization', description: 'Area render, moodboard, dan visual concept.' },
   ],
+  designPhases: [
+    { step: '01', title: 'Concept', description: 'Moodboard, layout, dan arah visual ruang.' },
+    { step: '02', title: 'Drawing', description: 'Gambar kerja, material, dan estimasi.' },
+    { step: '03', title: 'Build', description: 'Eksekusi interior dan site coordination.' },
+  ],
+  studioServices: [
+    { icon: 'mdi-floor-plan', title: 'Architecture Plan', description: 'Perencanaan ruang, layout, dan fasad.' },
+    { icon: 'mdi-sofa-outline', title: 'Interior Build', description: 'Material board dan execution partner.' },
+    { icon: 'mdi-cube-scan', title: '3D Visualization', description: 'Render, moodboard, dan visual concept.' },
+  ],
+  featuredSpaces: [
+    { title: 'Nara House', type: 'Residential', description: 'Hunian tropis kontemporer.', image: galleryImage },
+    { title: 'Atlas Office', type: 'Workspace', description: 'Kantor produktif dan fleksibel.', image: heroImage },
+    { title: 'Koma Retail', type: 'Retail', description: 'Interior retail compact.', image: galleryImage },
+  ],
   projects: [
     { title: 'Nara House', type: 'Residential', description: 'Portfolio hunian tropis kontemporer.', image: galleryImage },
     { title: 'Atlas Office', type: 'Workspace', description: 'Highlight kantor produktif dan fleksibel.', image: heroImage },

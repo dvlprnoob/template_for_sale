@@ -11,7 +11,7 @@ defineProps({
 
 <template>
   <v-row>
-    <v-col v-for="template in templates" :key="template.slug" cols="12" md="6" lg="4">
+    <v-col v-for="template in templates" :key="`${template.categorySlug}-${template.slug}`" cols="12" md="6" lg="4">
       <component :is="getCategoryTemplateCardComponent(template.categorySlug)" :template="template" />
     </v-col>
   </v-row>

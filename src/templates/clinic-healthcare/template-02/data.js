@@ -49,6 +49,21 @@ export default {
     { icon: 'mdi-domain', title: 'Corporate MCU', description: 'Narasi paket medical checkup perusahaan.' },
     { icon: 'mdi-home-heart', title: 'Home Service', description: 'Section pengambilan sample di rumah sebagai request custom.' },
   ],
+  labServices: [
+    { icon: 'mdi-test-tube', title: 'Lab Screening', description: 'Paket pemeriksaan lab dan hasil digital.' },
+    { icon: 'mdi-domain', title: 'Corporate MCU', description: 'Medical checkup perusahaan dan reporting HR.' },
+    { icon: 'mdi-home-heart', title: 'Home Sampling', description: 'Pengambilan sample di rumah sebagai request custom.' },
+  ],
+  screeningPackages: [
+    { title: 'Executive MCU', type: 'Corporate', turnaround: '12 jam', image: galleryImage },
+    { title: 'Wellness Screening', type: 'Preventive', turnaround: 'Same day', image: heroImage },
+    { title: 'Home Sampling', type: 'Service', turnaround: 'By request', image: galleryImage },
+  ],
+  labFlow: [
+    { step: '01', title: 'Book schedule', description: 'Pilih paket dan waktu sampling.' },
+    { step: '02', title: 'Sample process', description: 'Proses lab, validasi, dan quality control.' },
+    { step: '03', title: 'Digital result', description: 'Hasil digital siap dikirim ke pasien atau HR.' },
+  ],
   projects: [
     { title: 'Executive MCU', type: 'Corporate', description: 'Portfolio medical checkup untuk perusahaan.', image: galleryImage },
     { title: 'Wellness Screening', type: 'Preventive', description: 'Highlight paket kesehatan berkala.', image: heroImage },
